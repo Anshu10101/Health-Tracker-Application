@@ -1,83 +1,96 @@
-# Health Challenge Tracker
+# Health Tracker - Workout Progress & Analytics
 
-Health Challenge Tracker is a single-page application (SPA) developed in Angular 17, designed to track user workouts and display them in a user-friendly interface.
+Welcome to **Health Tracker**, a modern and intuitive Angular-based application designed to help users track their workout progress and visualize their fitness journey. Whether you're a fitness enthusiast or just starting out, this app provides a seamless way to log workouts, monitor progress, and gain insights through interactive charts.
 
-## Introduction
+---
 
-Workout Tracker is an Angular application that allows users to log their workouts. Users can input their names, select workout types, and specify workout durations. The application also provides features for searching and filtering workouts, as well as pagination for easy navigation through the list of users.
+## 🌟 Key Features
 
-## Features
+- **Workout Logging**: Easily log your workouts by entering your name, workout type, and duration.
+- **Workout List**: View all logged workouts in a clean, paginated table with search and filtering capabilities.
+- **Progress Visualization**: Track your fitness progress over time with interactive charts.
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
+- **Local Storage**: All workout data is securely stored in your browser's local storage for quick access.
 
-- **Workout Form**: Allows users to input their name, workout type, and workout minutes.
-- **Workout List**: Displays a grid of user workouts with options for search, filtering by workout type, and pagination.
-- **Optional Chart Feature**: Visualizes workout progress using charts.
-- **Responsive Design**: Ensures optimal viewing across a range of devices.
-- **Data Storage**: Stores workout data in local storage.
+---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- **Angular 17**: Front-end framework for building robust SPAs.
-- **Tailwind CSS**: Provides utility-first CSS classes for rapid UI development.
-- **ngx-pagination**: Library for implementing pagination in Angular applications.
-- **ng2-charts**: Integration for displaying charts using Chart.js within Angular.
+- **Angular 17**: A powerful front-end framework for building dynamic and scalable web applications.
+- **Tailwind CSS**: A utility-first CSS framework for crafting beautiful, responsive designs.
+- **ngx-charts**: A robust charting library for visualizing workout data.
+- **ngx-pagination**: A lightweight library for implementing pagination in Angular applications.
+- **Chart.js**: Used under the hood by ngx-charts for rendering interactive charts.
 
-## Getting Started
+---
 
-Follow these instructions to get a local copy of the project up and running on your machine.
+## 🚀 Getting Started
+
+Follow these steps to set up the project on your local machine.
 
 ### Prerequisites
 
-- Visual Studio Code - Code Editing, Git Bash - Git command line , Node.js and npm installed on your development machine.
+Before you begin, ensure you have the following installed:
+- **Node.js** (v16 or higher)
+- **npm** (Node Package Manager)
+- **Angular CLI** (v17 or higher)
+- **Git** (for cloning the repository)
 
 ### Installation
 
-1. Clone the repository:
-
-   ```
-   git clone https://github.com/itsindrajput/health-tracker.git
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/health-tracker.git
    cd health-tracker
    ```
 
-2. Install dependencies:
-   `npm install`
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-### Development Server
+3. **Run the Development Server**:
+   ```bash
+   ng serve
+   ```
+   Open your browser and navigate to `http://localhost:4200/` to view the application.
 
-- Run the application locally:
-  `ng serve`
+4. **Build for Production**:
+   ```bash
+   ng build --prod
+   ```
 
-### Build
+---
 
-- To build the project for production:
-  `ng build --prod
-`
+## 📊 Code Coverage
 
-## Code Coverage Report
-<img src="./media/fyle_code_coverage.png" width="600" />
+The application includes comprehensive unit tests with **100% code coverage** for critical components and services. Below is a snapshot of the code coverage report:
 
-## Testing
+![Code Coverage Report](./media/fyle_code_coverage.png)
 
+---
 
-### Test Cases for WorkoutFormComponent
+## 🧪 Testing
 
-- Component Creation: Checks if the component is created successfully.
-- Form Validity: Tests the form's initial invalid state and its validity when all fields are filled.
-- Form Submission: Ensures that the workout data is stored in local storage and that the router navigates to the workout list after form submission.
+The application is thoroughly tested to ensure reliability and functionality. Key test cases include:
 
-## Development server
+### WorkoutFormComponent
+- **Component Creation**: Verifies that the component initializes correctly.
+- **Form Validation**: Ensures the form is invalid when empty and valid when all fields are filled.
+- **Form Submission**: Tests that workout data is saved to local storage and the user is redirected to the workout list.
 
-- I have Deploy the application on a hosting platform like: Vercel
-- 🌎 https://health-tracker-application.vercel.app/workout-form
+### WorkoutListComponent
+- **Data Rendering**: Confirms that the workout list displays data correctly.
+- **Search and Filter**: Validates the search and filter functionalities.
+- **Pagination**: Ensures pagination works as expected for large datasets.
 
-- You can also Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Usage
+## 🌐 Live Deployment
 
-- Navigate to the Add Workout page.
-- Fill out the form with the user name, workout type, and workout duration.
-- Submit the form to add the workout.
-- Navigate to the Workout List page to view the list of users and their workouts.
-- Use the search bar to find users by name.
-- Use the filter option to filter users by workout type.
-- Use pagination to navigate through the list if there are more than 5 users.
+The application is hosted on **Vercel** for easy access. Check it out here:
+👉 [Health Tracker Live Demo](https://health-tracker-application.vercel.app/workout-form)
 
+--- 
+
+Happy tracking! 🏋️‍♂️📈
