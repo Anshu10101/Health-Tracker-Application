@@ -1,0 +1,23 @@
+/* Global Styles and Tailwind Imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset and Global Box Model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML and Body Styles */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
