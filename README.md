@@ -52,10 +52,11 @@ Follow these instructions to get a local copy of the project up and running on y
   `ng build --prod
 `
 
+## Code Coverage Report
+<img src="./media/fyle_code_coverage.png" width="600" />
+
 ## Testing
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-Unit tests for the components are written using Angular's testing utilities and Jasmine. You can run the tests using the following command:
 
 ### Test Cases for WorkoutFormComponent
 
